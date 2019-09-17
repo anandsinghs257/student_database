@@ -88,7 +88,7 @@
 
     <div class="form-group col-md-6">
       <%= form.label :status %>
-      <%= form.select :status, options_for_select(Student::STATUS, selected: form.object.try(:status)), {include_blank: "Select status"}, {class: 'form-control form-control-line', required: true} %>
+      <%= form.select :status, options_for_select(Student::STATUS, selected: form.object.try(:status)), {include_blank: "Select status"}, {class: 'form-control form-control-line'} %>
     </div>
   </div>
 
@@ -106,4 +106,7 @@
   .error{
     color: #ad2424f7;
   }
+  .form-control.error {
+    border: 1px solid #d6453f;
+}
 </style>
