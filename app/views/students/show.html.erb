@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="card mt-3 mb-3">
+    <div class="card-body">
+      <p id="notice"><%= notice %></p>
+
+      <p>
+        <strong>First name:</strong>
+        <%= @student.first_name %>
+      </p>
+
+      <p>
+        <strong>Last name:</strong>
+        <%= @student.last_name %>
+      </p>
+
+      <p>
+        <strong>Date of birth:</strong>
+        <%= @student.date_of_birth %>
+      </p>
+
+      <p>
+        <strong>Course:</strong>
+        <%= @student.course %>
+      </p>
+
+      <p>
+        <strong>Address:</strong>
+        <%= @student.address %>
+      </p>
+
+      <p>
+        <strong>City:</strong>
+        <%= @student.city %>
+      </p>
+
+      <p>
+        <strong>State:</strong>
+        <%= @student.state %>
+      </p>
+
+      <p>
+        <strong>Country:</strong>
+        <%= @student.country %>
+      </p>
+
+      <p>
+        <strong>Zipcode:</strong>
+        <%= @student.zipcode %>
+      </p>
+
+      <p>
+        <strong>Phone numbers:</strong>
+        <%= @student.phone_numbers %>
+      </p>
+
+      <p>
+        <strong>Placed at:</strong>
+        <%= @student.placed_at %>
+      </p>
+
+      <p>
+        <strong>Date of joining:</strong>
+        <%= @student.date_of_joining %>
+      </p>
+
+      <p>
+        <strong>Fees:</strong>
+        <%= @student.fees %>
+      </p>
+
+      <p>
+        <strong>Status:</strong>
+        <%= @student.status %>
+      </p>
+
+      <%= link_to 'Edit', edit_student_path(@student), class: "btn btn-warning" %>
+      <%= link_to 'Back', students_path, class: "btn btn-secondary" %>
+    </div>
+  </div>
+</div>
